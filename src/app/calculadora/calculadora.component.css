@@ -1,3 +1,9 @@
+/* Importación del font-family de una calculadora para simular a esta misma: */
+@font-face {
+    font-family: 'fuenteCalculadora';
+    src: url('/assets/fonts/digital-7.ttf') format('truetype');
+}
+
 .btn{
     width: 60px;
 }
@@ -29,6 +35,9 @@ h3{
 }
 
 #inputCalculadora{
+    font-family: "fuenteCalculadora";
+    font-weight: 600;
+    color: #514f65;
     padding: 10px; /* Ajusta el espacio interno */
     background-color: #d2e2e2; /* Color de fondo */
     border: 1px solid #ccc; /* Borde del input */
