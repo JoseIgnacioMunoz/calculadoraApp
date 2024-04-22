@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row justify-content-center my-5 mx-1 mx-md-5">
+    <div class="col-md-6 col-lg-4 calculadora rounded">
+      <div class="row marcaYModelo mt-2">
+        <div class="col-6">
+          <h1>CASIO</h1>
+        </div>
+        <div class="col-6 text-end">
+          <p><em>fx-82MS</em></p>
+        </div>
+      </div>
+      <div class="p-4 p-md-3 p-xl-5">
+        <h3 class="text-center">S-V.P.A.M</h3>
+        <div class="row">
+          <div class="col-9">
+            <input type="text" id="inputCalculadora" class="form-control mb-4" [(ngModel)]="resultado" [ngClass]="{'calculadoraApagada': !encendido}" readonly>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-danger onOff" (click)="toggleEncendido()">On/Off</button>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="row my-2">
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('7')">7</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('8')">8</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('9')">9</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('+')">+</button></div>
+          </div>
+          <div class="row my-2">
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('4')">4</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('5')">5</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('6')">6</button></div>
+            <div class="col-3"><button class="btn btn-secondary" (click)="insertarCaracter('-')">-</button></div>
+          </div>
+          <div class="row my-2">
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('1')">1</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('2')">2</button></div>
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('3')">3</button></div>
+            <div class="col-3"><button class="btn btn-secondary" (click)="insertarCaracter('*')">*</button></div>
+          </div>
+          <div class="row my-2">
+            <div class="col-3"><button class="btn btn-secondary numero" (click)="insertarCaracter('0')">0</button></div>
+            <div class="col-3"><button class="btn btn-danger limpiar" (click)="limpiar()">C</button></div>
+            <div class="col-3"><button class="btn btn-warning" (click)="calcular()">=</button></div>
+            <div class="col-3"><button class="btn btn-secondary" (click)="insertarCaracter('/')">/</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

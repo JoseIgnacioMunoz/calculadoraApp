@@ -1,0 +1,41 @@
+.btn{
+    width: 60px;
+}
+
+.onOff{
+    background-color: #ac6d84;
+    font-size: x-small;
+}
+
+.calculadora{
+    background-color: #514f65;
+}
+
+.numero{
+    background-color: #9896a2;
+}
+
+.limpiar{
+    background-color: #ac6d84;
+}
+
+h3{
+    font-size: medium;
+    color: #ac6d84;
+}
+
+.marcaYModelo{
+    color: #9896a2;
+}
+
+#inputCalculadora{
+    padding: 10px; /* Ajusta el espacio interno */
+    background-color: #d2e2e2; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 6px 1px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra externa e interna para dar profundidad */
+}
+
+.calculadoraApagada{
+    opacity: 0.5;
+}
